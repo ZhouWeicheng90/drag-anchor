@@ -1,0 +1,25 @@
+.wrapper {
+  position: absolute;
+  // top: calc(50% - 40px);
+  // left: calc(50% - 34px);
+  width: 34px;
+}
+
+.loc {
+  background: url("../../../assets/img/location.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  width: 34px;
+  height: 57px;
+}
+
+.loc:hover,
+.loc.active {
+  background-image: url("../../../assets/img/location-active.png");
+}
+
+.tooltip {
+  margin: 0 0 -0.19rem 0;
+  // color: white;
+  white-space: nowrap;
+}

@@ -1,0 +1,13 @@
+<div class="wrapper" [style.top]="loc.y+'px'" [style.left]="loc.x+'px'">
+  <div class="tooltip" [style.visibility]="showTip?'visible':'hidden'">{{loc.info}}</div>
+  <div
+    draggable="true"
+    (drag)="ondrag($event)"
+    (dragend)="ondragend($event)"
+    (dragstart)="ondragstart($event)"
+    class="loc"
+    (mouseenter)="mouseenter($event)"
+    (mouseleave)="mouseleave($event)"
+    (click)="onclick($event)"
+  ></div>
+</div>
